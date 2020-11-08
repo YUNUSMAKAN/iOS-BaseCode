@@ -10,13 +10,21 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+//    IOS 12 ve ustu icin bunlar yapilmasi gerekiyor.
+    var window: UIWindow?
+       func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //Hem ios 13 ustu ve ios 13 alti bir ayar yapmak istiyorsak bu aralikda yapilir.
+           if #available(iOS 13.0, *) {
+            
+           }
+           else {
+               self.window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+               self.window?.makeKeyAndVisible()
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+           }
+           return true
+       }
 
     // MARK: UISceneSession Lifecycle
 
