@@ -15,9 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //Hem ios 13 ustu ve ios 13 alti bir ayar yapmak istiyorsak bu aralikda yapilir.
            if #available(iOS 13.0, *) {
-            
+            //ios 13 ve ustu ise birsey yapma(scene delegate calissin diye)
            }
            else {
+            //ios 13 alti(ios12 vs) ise asagidaki yapilsin asagidaki ekrana gitsin dedik.
                self.window = UIWindow(frame: UIScreen.main.bounds)
             window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
                self.window?.makeKeyAndVisible()

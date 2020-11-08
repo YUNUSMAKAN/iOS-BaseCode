@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, *)//iOS 13 VE USTU OLDUGU ZAMAN ASAGIDAKILER YAPILACAK.
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
