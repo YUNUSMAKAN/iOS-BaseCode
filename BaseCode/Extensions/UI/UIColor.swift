@@ -15,7 +15,7 @@ extension UIColor {
 //    }
 
     static var Color0: UIColor {
-        return UIColor(named: "Pink")!
+        return UIColor(named: "Pink")! //Buradaki Pink yeni olusturdugumuz color in ismi.
     }
     
     static var Color: UIColor {
